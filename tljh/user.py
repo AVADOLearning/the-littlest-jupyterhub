@@ -28,7 +28,8 @@ def ensure_user(username):
     subprocess.check_call([
         'useradd',
         '--create-home',
-        '--base-dir /mnt/jupyter-profiles/home',
+        '--base-dir',
+        '/mnt/jupyter-profiles/home',
         username
     ])
 
